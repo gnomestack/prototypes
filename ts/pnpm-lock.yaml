@@ -46,6 +46,38 @@ importers:
         specifier: '*'
         version: 3.125.0(typescript@5.5.3)
 
+  sdk/char:
+    dependencies:
+      '@gnome/runtime-constants':
+        specifier: workspace:*
+        version: link:../runtime-constants
+      typescript:
+        specifier: ^5.5.3
+        version: 5.5.3
+    devDependencies:
+      vite:
+        specifier: ^2.7.13
+        version: 2.9.18
+      vitest:
+        specifier: ^2.0.3
+        version: 2.0.3(@types/node@20.14.11)
+
+  sdk/errors:
+    dependencies:
+      '@gnome/os-constants':
+        specifier: workspace:*
+        version: link:../os-constants
+      typescript:
+        specifier: ^5.5.3
+        version: 5.5.3
+    devDependencies:
+      vite:
+        specifier: ^2.7.13
+        version: 2.9.18
+      vitest:
+        specifier: ^2.0.3
+        version: 2.0.3(@types/node@20.14.11)
+
   sdk/os-constants:
     dependencies:
       '@gnome/runtime-constants':
@@ -64,6 +96,28 @@ importers:
 
   sdk/runtime-constants:
     dependencies:
+      typescript:
+        specifier: ^5.5.3
+        version: 5.5.3
+    devDependencies:
+      vite:
+        specifier: ^2.7.13
+        version: 2.9.18
+      vitest:
+        specifier: ^2.0.3
+        version: 2.0.3(@types/node@20.14.11)
+
+  sdk/strings:
+    dependencies:
+      '@gnome/char':
+        specifier: workspace:*
+        version: link:../char
+      '@gnome/errors':
+        specifier: workspace:*
+        version: link:../errors
+      '@gnome/os-constants':
+        specifier: workspace:*
+        version: link:../os-constants
       typescript:
         specifier: ^5.5.3
         version: 5.5.3

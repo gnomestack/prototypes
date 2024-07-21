@@ -1,0 +1,5 @@
+vitest.config.js
+tsconfig.json
+deno/*
+**/*_test.ts
+node_modules/*

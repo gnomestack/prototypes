@@ -3,5 +3,8 @@
     "deno.enablePaths": [
         "./sdk/runtime-constants/deno",
         "./sdk/os-constants/deno",
+        "./sdk/char/deno",
+        "./sdk/strings/deno",
+        "./sdk/errors/deno",
     ],
 }

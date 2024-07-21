@@ -1,0 +1,110 @@
+{
+    "name": "@gnome/errors",
+    "description": "Common errors and error helper functions.",
+    "version": "0.1.0",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest",
+        "test:watch": "vitest --watch",
+        "test:run": "vitest --run",
+        "test:bun": "bun x vitest --run",
+        "test:deno": "deno test -A --node-modules-dir=true --unstable-sloppy-imports -q ./deno/**/*_test.ts"
+    },
+    "exports": {
+        ".": {
+            "types": "./mod.d.ts",
+            "import": "./mod.js"
+        },
+        "./abort-error": {
+            "types": "./abort_error.d.ts",
+            "import": "./abort_error.js"
+        },
+        "./argument-empty-error": {
+            "types": "./argument_empty_error.d.ts",
+            "import": "./argument_empty_error.js"
+        },
+        "./argument-error": {
+            "types": "./argument_error.d.ts",
+            "import": "./argument_error.js"
+        },
+        "./argument-null-error": {
+            "types": "./argument_null_error.d.ts",
+            "import": "./argument_null_error.js"
+        },
+        "./argument-range-error": {
+            "types": "./argument_range_error.d.ts",
+            "import": "./argument_range_error.js"
+        },
+        "./argument-whitespace-error": {
+            "types": "./argument_whitespace_error.d.ts",
+            "import": "./argument_whitespace_error.js"
+        },
+        "./assertion-error": {
+            "types": "./assertion_error.d.ts",
+            "import": "./assertion_error.js"
+        },
+        "./collect-errors": {
+            "types": "./collect_errors.d.ts",
+            "import": "./collect_errors.js"
+        },
+        "./errorf": {
+            "types": "./errorf.d.ts",
+            "import": "./errorf.js"
+        },
+        "./invalid-cast-error": {
+            "types": "./invalid_cast_error.d.ts",
+            "import": "./invalid_cast_error.js"
+        },
+        "./invalid-operation-error": {
+            "types": "./invalid_operation_error.d.ts",
+            "import": "./invalid_operation_error.js"
+        },
+        "./not-implemented-error": {
+            "types": "./not_implemented_error.d.ts",
+            "import": "./not_implemented_error.js"
+        },
+        "./not-supported-error": {
+            "types": "./not_supported_error.d.ts",
+            "import": "./not_supported_error.js"
+        },
+        "./null-reference-error": {
+            "types": "./null_reference_error.d.ts",
+            "import": "./null_reference_error.js"
+        },
+        "./object-disposed-error": {
+            "types": "./object_disposed_error.d.ts",
+            "import": "./object_disposed_error.js"
+        },
+        "./print-error": {
+            "types": "./print_error.d.ts",
+            "import": "./print_error.js"
+        },
+        "./system-error": {
+            "types": "./range_error.d.ts",
+            "import": "./range_error.js"
+        },
+        "./timeout-error": {
+            "types": "./timeout_error.d.ts",
+            "import": "./timeout_error.js"
+        },
+        "./walk-error": {
+            "types": "./walk_error.d.ts",
+            "import": "./walk_error.js"
+        }
+    },
+    "author": {
+        "name": "BowTiedGnome"
+    },
+    "dependencies": {
+        "@gnome/os-constants": "workspace:*"
+    },
+    "peerDependencies": {
+        "typescript": "^5.5.3"
+    },
+    "devDependencies": {
+        "vite": "^2.7.13",
+        "vitest": "^2.0.3"
+    }
+}

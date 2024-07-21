@@ -1,0 +1,46 @@
+{
+    "name": "@gnome/char",
+    "description": "Functions for working with characters in JavaScript.",
+    "version": "0.1.0",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest",
+        "test:watch": "vitest --watch",
+        "test:run": "vitest --run",
+        "test:bun": "bun x vitest --run",
+        "test:deno": "deno test -A --node-modules-dir=true ./deno/**/*_test.ts"
+    },
+    "exports": {
+        ".": {
+            "types": "./mod.d.ts",
+            "import": "./mod.js"
+        },
+        "./utils": {
+            "types": "./utils.d.ts",
+            "import": "./utils.js"
+        },
+        "./char": {
+            "types": "./char.d.ts",
+            "import": "./char.js"
+        },
+        "./constants": {
+            "types": "./constants.d.ts",
+            "import": "./constants.js"
+        }
+    },
+    "author": {
+        "name": "BowTiedGnome"
+    },
+    "dependencies": {
+        "@gnome/runtime-constants": "workspace:*"
+    },
+    "peerDependencies": {
+        "typescript": "^5.5.3"
+    },
+    "devDependencies": {
+        "vite": "^2.7.13",
+        "vitest": "^2.0.3"
+    }
+}
