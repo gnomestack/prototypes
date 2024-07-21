@@ -1,0 +1,31 @@
+{
+    "name": "@gnome/runtime-constants",
+    "description": "Runtime constants for determine the JavaScript runtime",
+    "version": "0.1.0",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "test": "vitest",
+        "test:watch": "vitest --watch",
+        "test:run": "vitest --run",
+        "test:bun": "bun x vitest --run",
+        "test:deno": "deno test -A --node-modules-dir=true ./deno/mod_test.ts"
+    },
+    "exports": {
+        ".": {
+            "types": "./mod.d.ts",
+            "import": "./mod.js"
+        }
+    },
+    "author": {
+        "name": "BowTiedGnome"
+    },
+    "peerDependencies": {
+        "typescript": "^5.5.3"
+    },
+    "devDependencies": {
+        "vite": "^2.7.13",
+        "vitest": "^2.0.3"
+    }
+}

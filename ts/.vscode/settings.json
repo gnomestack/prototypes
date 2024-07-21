@@ -1,0 +1,7 @@
+{
+    "deno.enable": true,
+    "deno.enablePaths": [
+        "./sdk/runtime-constants/deno",
+        "./sdk/os-constants/deno",
+    ],
+}

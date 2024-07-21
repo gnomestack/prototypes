@@ -1,0 +1,15 @@
+{
+  "name": "box",
+  "description": "do not generate anything",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "@pulumi/pulumi": "*",
+    "@gnome/iac-linux": "workspace:*"
+  }
+}

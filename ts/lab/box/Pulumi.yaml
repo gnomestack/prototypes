@@ -1,0 +1,10 @@
+name: box
+runtime:
+  name: nodejs
+  options:
+    packagemanager: pnpm
+description: do not generate anything
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://www.pulumi.com/ai/api/project/9eb34884-33fe-479e-9313-400ac8dabae0.zip

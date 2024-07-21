@@ -1,0 +1,17 @@
+{
+    "name": "@gnome/iac-os",
+    "description": "Infrastructure as Code for OS using pulumi",
+    "version": "0.0.0",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "dependencies": {
+        "@pulumi/pulumi": "^3.125.0",
+        "@pulumi/command": "^1.0.1"
+    }
+}
